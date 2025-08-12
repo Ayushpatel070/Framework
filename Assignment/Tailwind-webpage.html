@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS Webpage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- HEADER -->
+    <header class="bg-blue-600 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-3xl font-bold">My Tailwind Website</h1>
+            <p class="mt-2">Responsive layout using Tailwind CSS utility classes</p>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="container mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="md:col-span-2">
+            <h2 class="text-2xl font-semibold mb-4">Hello Guys</h2>
+            <p class="mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa et, eum id nam corrupti quasi doloremque iste placeat beatae unde eveniet quam totam sapiente veniam officiis pariatur impedit, non nisi.</p>
+            <div class="space-x-2">
+                <button class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded">Learn More</button>
+                <button
+                    class="border border-red-500 text-red-500 hover:bg-red-500 hover:text-white px-4 py-2 rounded">Contact
+                    Us</button>
+            </div>
+        </div>
+
+        <div class="bg-white shadow rounded-lg p-6">
+            <h2 class="text-xl font-semibold mb-4">Contact Form</h2>
+            <form class="space-y-4">
+                <input type="text" placeholder="Name" class="w-full border border-gray-300 p-2 rounded" />
+                <input type="email" placeholder="Email" class="w-full border border-gray-300 p-2 rounded" />
+                <textarea placeholder="Message" class="w-full border border-gray-300 p-2 rounded"></textarea>
+                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">Send
+                    Message</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- PRICING TABLE -->
+    <section class="bg-gray-50 py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Pricing Plans</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- Basic Plan -->
+                <div class="bg-white rounded-lg shadow p-6 text-center">
+                    <h3 class="text-xl font-semibold mb-4">Basic</h3>
+                    <p class="text-4xl font-bold mb-4">$19<span class="text-base font-normal">/mo</span></p>
+                    <ul class="mb-6 space-y-2 text-gray-600">
+                        <li>✔ 5 Projects</li>
+                        <li>✔ Basic Support</li>
+                        <li>✔ 5GB Storage</li>
+                    </ul>
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">Choose Plan</button>
+                </div>
+
+                <!-- Standard Plan -->
+                <div class="bg-white rounded-lg shadow p-6 text-center border-2 border-blue-600">
+                    <h3 class="text-xl font-semibold mb-4">Standard</h3>
+                    <p class="text-4xl font-bold mb-4">$49<span class="text-base font-normal">/mo</span></p>
+                    <ul class="mb-6 space-y-2 text-gray-600">
+                        <li>✔ 15 Projects</li>
+                        <li>✔ Priority Support</li>
+                        <li>✔ 50GB Storage</li>
+                    </ul>
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">Choose Plan</button>
+                </div>
+
+                <!-- Premium Plan -->
+                <div class="bg-white rounded-lg shadow p-6 text-center">
+                    <h3 class="text-xl font-semibold mb-4">Premium</h3>
+                    <p class="text-4xl font-bold mb-4">$99<span class="text-base font-normal">/mo</span></p>
+                    <ul class="mb-6 space-y-2 text-gray-600">
+                        <li>✔ Unlimited Projects</li>
+                        <li>✔ 24/7 Support</li>
+                        <li>✔ 200GB Storage</li>
+                    </ul>
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">Choose Plan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-800 text-white py-4 text-center">
+        <p>&copy; 2025 My Website. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
